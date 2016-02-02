@@ -1,0 +1,114 @@
+/* line 1, ../sass/styles.scss */
+body {
+  font-size: 14px;
+  color: #000;
+}
+
+/* line 6, ../sass/styles.scss */
+.hr-divider::before {
+  background-color: grey;
+}
+
+/* line 25, ../sass/styles.scss */
+.navbar-transparent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* line 33, ../sass/styles.scss */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  min-width: 100%;
+  max-height: 500px;
+}
+
+/* line 37, ../sass/styles.scss */
+.carousel-light .carousel-indicators li {
+  border: 1px solid #fff;
+}
+
+/* line 41, ../sass/styles.scss */
+.main {
+  margin: 20px 0;
+}
+
+/* line 45, ../sass/styles.scss */
+.nav-bordered.nav-stacked > li > a {
+  display: block;
+  padding: 5px 10px 5px 30px;
+  border-bottom: 0;
+  border-right: 4px solid transparent;
+  border-left: 0;
+}
+
+/* line 53, ../sass/styles.scss */
+.nav-bordered.nav-stacked > li > a:hover, .nav-bordered.nav-stacked > li > a:focus {
+  border-left: 0;
+  border-color: black;
+}
+
+/* line 58, ../sass/styles.scss */
+.nav-bordered.nav-stacked > li.active > a, .nav-bordered.nav-stacked > li.active > a:hover, .nav-bordered.nav-stacked > li.active > a:focus {
+  border-right-color: black;
+}
+
+/* line 62, ../sass/styles.scss */
+.hr-divider {
+  margin: 25px 0 20px;
+}
+
+/* line 67, ../sass/styles.scss */
+.navbar-transparent .navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+/* line 71, ../sass/styles.scss */
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  color: #fff;
+}
+
+/* line 76, ../sass/styles.scss */
+.navbar-toggle .icon-bar:nth-of-type(2) {
+  top: 1px;
+}
+
+/* line 80, ../sass/styles.scss */
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  top: 2px;
+}
+
+/* line 84, ../sass/styles.scss */
+.navbar-toggle .icon-bar {
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+/* line 89, ../sass/styles.scss */
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+/* line 94, ../sass/styles.scss */
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+
+/* line 98, ../sass/styles.scss */
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}
+
+/* line 103, ../sass/styles.scss */
+.icon-chevron-thin-left:before, .icon-chevron-thin-right:before {
+  color: white;
+}
+
+/* line 107, ../sass/styles.scss */
+.text-ribbon-input {
+  background: white;
+  border: 1px solid #ccc;
+}

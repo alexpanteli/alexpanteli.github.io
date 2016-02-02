@@ -1,0 +1,110 @@
+body{
+  font-size:14px;
+  color:#000;
+}
+
+.hr-divider::before {
+   
+    background-color: grey;
+}
+
+
+
+
+// .navbar-transparent .navbar-nav > .active > a, .navbar-transparent .navbar-nav > .active > a:hover, .navbar-transparent .navbar-nav > .active > a:focus{
+//  color:#fff;
+//  font-weight:100;
+// }
+// .navbar-transparent .navbar-nav > li > a:hover, .navbar-transparent .navbar-nav > li > a:focus{
+//  color:#fff;
+// }
+// .navbar-transparent .navbar-nav > li > a{
+//   color:#fff;
+// }
+
+.navbar-transparent{
+      position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+min-width: 100%;
+max-height: 500px;
+}
+.carousel-light .carousel-indicators li{
+  border:1px solid #fff;
+}
+
+.main{
+  margin:20px 0;
+}
+
+.nav-bordered.nav-stacked > li > a {
+    display: block;
+    padding: 5px 10px 5px 30px;
+    border-bottom: 0;
+    border-right: 4px solid transparent;
+    border-left:0;
+  }
+
+.nav-bordered.nav-stacked > li > a:hover, .nav-bordered.nav-stacked > li > a:focus{
+  border-left:0;
+  border-color:black;
+}
+
+.nav-bordered.nav-stacked > li.active > a, .nav-bordered.nav-stacked > li.active > a:hover, .nav-bordered.nav-stacked > li.active > a:focus{
+  border-right-color:black;
+}
+
+.hr-divider{
+  margin:25px 0 20px;
+}
+
+
+.navbar-transparent .navbar-toggle .icon-bar{
+  background:#fff;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+  color:#fff;
+}
+
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+.icon-chevron-thin-left:before, .icon-chevron-thin-right:before{
+  color:white;
+}
+
+.text-ribbon-input{
+  background:white;
+  border:1px solid #ccc;
+}
