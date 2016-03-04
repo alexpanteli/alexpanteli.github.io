@@ -67,20 +67,33 @@ body{
 .ui.segments{
       box-shadow: none !important;
       transition:.3s all;
+          border: 1px solid rgba(44,62,80,0.15);
  
 }
 
 
 .ui.segments:hover{
-      box-shadow: 0px 1px 2px 0 rgba(34,36,38,0.5) !important;
+      box-shadow: 0px 1px 2px 0 rgba(44,62,80,.5) !important;
+      cursor: pointer;
+}
+
+.main-footer_column--right{
+  text-align: right !important;
 }
 
 
+.ui.horizontal.list > .item > i.icon{
+  font-size: 1.5rem;
+}
 
 
 @media(max-width: 767px){
   .main-menu{
   display: none !important;
+}
+
+.main-footer_column--right, .main-footer_column--left{
+  text-align: center !important;
 }
 
 .hamburger-btn{
