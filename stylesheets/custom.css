@@ -179,6 +179,7 @@ body{
 .hamburger-btn{
   display: none !important;
   margin: 40px 0 0 !important;
+
 }
 
 @media(min-width: 767px){
@@ -218,6 +219,7 @@ body{
 
 .hamburger-btn{
   display: inline-block !important;
+   border-radius: 0 !important;
 }
 .header-text{
  
