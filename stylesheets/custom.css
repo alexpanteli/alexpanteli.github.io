@@ -167,3 +167,8 @@ body{
   font-family: 'Roboto Mono' !important;
   font-weight: 300 !important;
 }
+
+p{
+  
+ font-weight: italic !important;
+}
