@@ -154,3 +154,8 @@ body{
 .main-footer--inner{
   border-top: 1px solid #ccc;
 }*/
+
+
+.ui.progress .bar{
+      background: #2C3E50 !important;
+}
