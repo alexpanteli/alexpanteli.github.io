@@ -21,19 +21,28 @@ body{
   text-transform: uppercase !important;
   font-weight: bold !important;
   transition:1s all !important;
+  font-family: 'Roboto Mono' !important;
 }
 
 .hamburger-btn{
   display: none !important;
   margin: 40px 0 0 !important;
+   font-family: 'Roboto Mono' !important;
 
 }
 
 @media(min-width: 767px){
   .header-text__title{
   font:5rem/6rem arial,helvetica,sans-serif !important;
+ 
 }
 
+}
+
+
+
+.header-text__title, .header-text__subtitle{
+   font-family: 'Architects Daughter', cursive !important;
 }
 
 
@@ -49,6 +58,9 @@ body{
   padding: 6.42857rem 0 10rem ;
 
 }
+
+.main-footer__icon{transition:1s all !important;}
+.main-footer__icon:hover{color: #2c3e50 !important;}
 
 .main-footer{
   margin: 90px 0 0;
@@ -67,13 +79,15 @@ body{
 .ui.segments{
       box-shadow: none !important;
       transition:.3s all;
-          border: 1px solid rgba(44,62,80,0.15);
+      border: none !important;
+          
  
 }
 
 
 .ui.segments:hover{
-      box-shadow: 0px 1px 2px 0 rgba(44,62,80,.5) !important;
+      box-shadow: 0 0 2px  rgba(44,62,80,.5) !important;
+      
       cursor: pointer;
 }
 
@@ -107,7 +121,7 @@ body{
 }
 
 .header-text__subtitle{
-  font:1.4rem/2rem arial,helvetica,sans-serif !important;
+  font:1.4rem/2rem 'Architects Daughter', cursive !important;
 }
 
 }
