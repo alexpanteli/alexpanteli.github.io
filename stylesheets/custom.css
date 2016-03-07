@@ -13,7 +13,7 @@ body{
 
 
 .main-menu{
-  margin: 40px 0 0 !important;
+ /* margin: 40px 0 0 !important;*/
   border:0 !important;
 }
 
@@ -70,9 +70,7 @@ body{
 .main-footer__icon{transition:1s all !important;}
 .main-footer__icon:hover{color: #2c3e50 !important;}
 
-.main-footer{
-  margin: 90px 0 0;
-}
+
 
 
 .main-content{
