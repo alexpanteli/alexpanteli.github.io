@@ -159,3 +159,11 @@ body{
 .ui.progress .bar{
       background: #2C3E50 !important;
 }
+
+
+.main-content__divider{
+  color:#2C3E50 !important;
+  margin: 3rem 0 2rem !important;
+  font-family: 'Roboto Mono' !important;
+  font-weight: 300 !important;
+}
