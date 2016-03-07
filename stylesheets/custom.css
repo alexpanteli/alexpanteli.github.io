@@ -22,6 +22,7 @@ body{
   font-weight: bold !important;
   transition:1s all !important;
   font-family: 'Roboto Mono' !important;
+  font-weight: 300 !important;
 }
 
 
@@ -41,7 +42,8 @@ body{
 
 @media(min-width: 767px){
   .header-text__title{
-  font:5rem/6rem arial,helvetica,sans-serif !important;
+  font:100 5rem/6rem 'Roboto Mono' !important;
+  
  
 }
 
@@ -50,7 +52,8 @@ body{
 
 
 .header-text__title, .header-text__subtitle{
-   font-family: 'Architects Daughter', cursive !important;
+ font-family: 'Roboto Mono' !important;
+ font-weight: 100 !important;;
 }
 
 
@@ -129,7 +132,7 @@ body{
 }
 
 .header-text__subtitle, {
-  font:1.4rem/2rem 'Architects Daughter', cursive !important;
+  font:100 1.4rem/2rem 'Architects Daughter', cursive !important;
 }
 
 }
@@ -137,11 +140,13 @@ body{
 .ui.centered.header, .ui.center.aligned.header{
   font-family: 'Roboto Mono' !important;
   color: #2c3e50 !important;
+  font-weight: 300 !important;
 }
 
 
 .main-footer__copyright-text{
-  font-family: 'Architects Daughter', cursive !important;
+ font-family: 'Roboto Mono' !important;
+ font-weight: 500 !important;
 }
 
 
