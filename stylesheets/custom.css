@@ -17,12 +17,19 @@ body{
   border:0 !important;
 }
 
-.main-menu__item{
+.main-menu__item, .sidebar-menu__item {
   text-transform: uppercase !important;
   font-weight: bold !important;
   transition:1s all !important;
   font-family: 'Roboto Mono' !important;
 }
+
+
+.sidebar-menu__item{
+  color: #2c3e50 !important;
+}
+
+
 
 .hamburger-btn{
   display: none !important;
@@ -68,7 +75,7 @@ body{
 
 
 .main-content{
- margin: 5rem  0 0;
+ margin: 5rem  0 10rem;
 }
 
 
@@ -134,4 +141,10 @@ body{
 
 .main-footer__copyright-text{
   font-family: 'Architects Daughter', cursive !important;
+}
+
+
+
+.main-footer--inner{
+  border-top: 1px solid #ccc;
 }
