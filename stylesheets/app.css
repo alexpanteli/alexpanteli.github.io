@@ -1,58 +1,45 @@
-.nav-header{
-  padding-left: 34px;
-margin-bottom: 5px;
-font-size: 85%;
-font-weight: normal;
-letter-spacing: 1px;
-color: #afafaf;
-text-transform: uppercase;
+.nav-header {
+	padding-left: 34px;
+	margin-bottom: 5px;
+	font-size: 85%;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #afafaf;
+	text-transform: uppercase;
 }
-
-
-.nav-stacked > li > a{
-    display: block;
-    padding: 5px 10px 5px 30px;
+.nav-stacked > li > a {
+	display: block;
+	padding: 5px 10px 5px 30px;
 }
-
 .navbar-transparent {
-    background-color: transparent;
-    border-color: transparent;
+	background-color: transparent;
+	border-color: transparent;
 }
-
-
-
-.navbar{
-  border-radius: 0;
-  margin: 0;
+.navbar {
+	border-radius: 0;
+	margin: 0;
 }
-
-
-
-
-
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    background: transparent;
-    color: #2c3e50;
-    font-weight: 300;
+	background: transparent;
+	color: #2c3e50;
+	font-weight: 300;
 }
-
-.navbar-default .navbar-toggle .icon-bar{ background: #2c3e50;}
-
-
+.navbar-default .navbar-toggle .icon-bar {
+	background: #2c3e50;
+}
 .swag-line:before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    z-index: 2;
-    background-color: #2c3e50;
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	z-index: 2;
+	background-color: #2c3e50;
 }
 
-
-
+/*
 
 .first-slide{
 	background: url(../images/slide1.jpg);
@@ -79,44 +66,18 @@ text-transform: uppercase;
 }
 
 
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-       url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+*/
+html, body {
+	position: relative;
+	height: 100%;
 }
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+.swiper-container {
+	width: 100%;
+	height: 500px;
 }
-
-.glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
-	content: none;
+.swiper-slide{
+	background: url(../images/slide1.jpg);
+	background-position: center;
+	background-size: cover;
 }

@@ -10,11 +10,12 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="stylesheets/min.css">
         <link rel="stylesheet" href="stylesheets/toolkit.css">
+        <link rel="stylesheet" href="stylesheets/swiper.min.css">
         <link rel="stylesheet" href="stylesheets/app.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+
+
     </head>
-    <body class="swag-line">
+    <body class="">
         <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
             <ul class="nav nav-stacked">
                 <li class="nav-header">Examples</li>
@@ -29,7 +30,7 @@
                 </li>
             </ul>
         </div>
-        <div class="stage" id="stage">
+        <div class="stage swag-line" id="stage">
 
 
 
@@ -57,56 +58,20 @@
                 <!--/.container-fluid -->
             </nav>
 
+            
+            <div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide"></div>
+<div class="swiper-slide"></div>
+<div class="swiper-slide"></div>
+</div>
+ 
+<div class="swiper-pagination swiper-pagination-white"></div>
+ 
+<div class="swiper-button-next swiper-button-white"></div>
+<div class="swiper-button-prev swiper-button-white"></div>
+</div>
 
-             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-         <div class="fill first-slide"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="fill second-slide"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="fill third-slide"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <!-- <i class="material-icons">face</i> -->
-        <span class="glyphicon glyphicon-chevron-left material-icons" aria-hidden="true">chevron_left</span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right material-icons" aria-hidden="true">chevron_right</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
 
             <div class="container">
                 <div class="row">
@@ -122,7 +87,21 @@
         </div>
         <!-- jQuery first, then Bootstrap JS. -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="javascripts/swiper.min.js"></script>
         <script src="javascripts/min.js"></script>
         <script src="javascripts/toolkit.js"></script>
+        <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+      
+    });
+    </script>
+</body>
+      
+       
     </body>
 </html>
