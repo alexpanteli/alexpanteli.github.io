@@ -86,13 +86,13 @@ html, body {
 }
 
 .slide-one{
-background: url(../images/slide1.jpg);
+background: url(../images/slide1.png);
 }
 .slide-two{
-background: url(../images/slide2.jpg);
+background: url(../images/slide2.png);
 }
 .slide-three{
-background: url(../images/slide3.jpg);
+background: url(../images/slide3.png);
 }
 .swiper-slide{
 	background-position: center;
