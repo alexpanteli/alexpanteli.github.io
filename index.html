@@ -1,329 +1,119 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Android</title>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="stylesheets/min.css">
+        <link rel="stylesheet" href="stylesheets/toolkit.css">
+        <link rel="stylesheet" href="stylesheets/app.css">
+    </head>
+    <body class="swag-line">
+        <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+            <ul class="nav nav-stacked">
+                <li class="nav-header">Examples</li>
+                <li class="active">
+                    <a href="index-2.html">Startup</a>
+                </li>
+                <li>
+                    <a href="minimal/index.html">Minimal</a>
+                </li>
+                <li>
+                    <a href="bold/index.html">Bold</a>
+                </li>
+            </ul>
+        </div>
+        <div class="stage" id="stage">
 
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
-          <!-- Navigation -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-target="#stage" data-toggle="stage" data-distance="-300">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Project name</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./">Home</a></li>
+                            <li><a href="../navbar-static-top/">About</a></li>
+                            <li><a href="../navbar-fixed-top/">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
             </nav>
-          </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/android-logo.png">
-          </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="android-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/android-logo-white.png">
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
-        </nav>
-      </div>
+             <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div class="logo-font android-slogan">be together. not the same.</div>
-          <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
-          <div class="logo-font android-create-character">
-            <a href=""><img src="images/andy.png"> create your android character</a>
-          </div>
-
-          <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a>
-        </div>
-        <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/wear-silver-on.png">
-                <img class="android-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
             </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                 <div class="fill"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
             </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                 <div class="fill"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
             </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
-            </div>
-          </div>
-        </div>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="android-customized-section-image"></div>
-        </div>
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on Android</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   androidify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Download now
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Find apps
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab nulla iste, in rerum. Quae eligendi praesentium doloremque minima libero dolorem ab dicta commodi distinctio, ducimus, quisquam temporibus error sed vitae? Praesentium eaque magnam tenetur quis tempore, dolor sapiente, consequuntur maiores fugit ab obcaecati, ipsam. Beatae animi illo id odio amet, velit ratione dolorum est sed tenetur, provident labore placeat sint eum. Incidunt explicabo ullam magni! Veniam praesentium, animi non. Nemo aliquid fugiat maiores veritatis, quo autem rem quas. Repellat enim eum dicta fuga aspernatur dignissimos ipsam hic earum suscipit dolorum eaque quod, libero mollitia, quas facilis temporibus, nihil, ad quasi. Debitis provident assumenda, porro modi laborum rerum sit beatae possimus dolor non voluptatem esse dolorum repellat recusandae, asperiores iste? Sapiente obcaecati odio unde! Voluptas ratione hic quam, iusto nam iure aperiam, quidem fugiat alias ad harum eum dolorem optio animi voluptatum quasi deleniti laborum dolores dolore nesciunt dignissimos beatae suscipit repellat eius sunt. Consectetur necessitatibus officia nulla voluptas aut velit temporibus, est asperiores quam rerum architecto accusantium et sint dignissimos, soluta laudantium, molestias pariatur quisquam vero earum aspernatur debitis harum magnam neque. Expedita, corrupti provident illo nostrum dolorem nam. Qui facilis a minima numquam, dolor sequi est nihil quos voluptatum molestias eos nobis nostrum fuga commodi omnis dolorem, aspernatur, optio dignissimos quo necessitatibus nulla? Ad quisquam ipsum asperiores harum provident atque porro aspernatur temporibus maxime ducimus fuga inventore earum autem sapiente itaque, blanditiis architecto alias quos, optio quas obcaecati. Nemo hic ipsum maxime optio unde veritatis voluptas, voluptate qui debitis itaque ullam. Nulla maiores officiis error nesciunt voluptate placeat numquam et corrupti earum consectetur reiciendis, distinctio deserunt ullam voluptatibus dolores, repudiandae, harum cum animi laboriosam veritatis, magni tempore aliquam! Molestiae similique repellat deserunt commodi inventore quae repudiandae dicta tenetur ipsum ducimus cum quia quo alias, dolor quibusdam maxime. Dolorum maiores fugit itaque rem quaerat? Tempore quod, accusamus omnis optio perferendis odio a enim, nulla esse aliquam nostrum iusto quae rem laudantium. Deleniti dolorem aliquid facere quod laborum velit placeat, architecto in officiis laudantium saepe voluptatem dicta ut voluptates optio earum, perferendis, dolores a dignissimos deserunt provident. Quae dignissimos voluptatibus quam placeat provident, eius odio quaerat tempora cumque nam maxime. Doloribus nam fugiat quis dolorem perferendis, vero at. Tempora rerum minus, debitis doloremque vel facere, dolores recusandae odio architecto aut adipisci. Porro harum quam similique aperiam voluptatibus, eius vel aspernatur eos dolorum quibusdam totam quaerat ea ab excepturi magni, fuga error autem ipsa non, laborum libero eum sunt laboriosam tempora? Minus saepe, aliquid asperiores ratione, qui rerum mollitia nihil maxime dolores repellendus eligendi, culpa tempora ipsa eaque nesciunt iusto! Deserunt iste et nemo saepe odit repellendus accusantium vitae iusto! Incidunt alias assumenda, eveniet blanditiis unde vero, facere repellendus amet laborum voluptas id odit consequatur delectus adipisci? Libero harum accusantium accusamus et incidunt, temporibus placeat cum mollitia non voluptates quod id, minima praesentium eos repudiandae inventore vitae. Iure fugit ipsam quae, accusamus repellendus aliquid! Cupiditate neque molestiae non necessitatibus facilis esse quas commodi pariatur quaerat aliquam rerum veniam numquam obcaecati exercitationem, natus sed ipsum nostrum debitis temporibus amet quidem nisi saepe assumenda! Corporis, quos, a. Quibusdam vero fugit ipsa deleniti similique iure quisquam sapiente. Laborum ea neque adipisci repellat sit sint ex vel iusto pariatur, fugiat dicta eligendi dolorem qui ipsum, vero hic at ipsam fugit quia inventore. Officiis optio, blanditiis suscipit vero laboriosam illo voluptatibus illum, libero explicabo esse soluta rem, aliquid possimus numquam recusandae, repellat facilis? Voluptates, maiores ullam incidunt neque tenetur voluptas fuga nam minima mollitia accusantium, magnam totam voluptate animi, officiis repellat quis ab facere quae nihil, dolore dolorem. Doloremque molestiae sapiente, molestias debitis laborum ab neque est error illum fugiat nobis quod, suscipit alias aperiam atque a provident recusandae iusto nemo ratione? Itaque perspiciatis iure, quidem, mollitia obcaecati ratione temporibus nemo deserunt totam quaerat praesentium vel neque, ab voluptate nam ipsum saepe dignissimos. Temporibus, sed, laboriosam quis, rem inventore, recusandae amet dolore voluptate nihil blanditiis eos aut. Aperiam, molestias. Ea molestias adipisci, quidem vero quae quam laborum dolor similique accusamus, ratione, officiis consectetur, consequatur. Iusto ipsam officia, laboriosam sed officiis molestias amet cupiditate illum nam accusantium aperiam ullam eum quos. Perspiciatis fugit, nesciunt quia maxime illo velit esse ipsam sunt dicta officiis? Ullam aperiam veritatis, dolores quod labore in facere, sequi assumenda voluptates officia dolor enim ad fuga rem omnis molestias, mollitia consequuntur ratione magnam fugiat ipsum soluta. Ipsam fugit, ipsum temporibus tempora perspiciatis labore recusandae quos ullam explicabo quidem, vel dolor deserunt repellendus unde expedita ea debitis hic asperiores? Magnam dolorum, nemo numquam dolor. Delectus blanditiis soluta, porro quidem ullam voluptate recusandae itaque saepe debitis incidunt laboriosam, facere suscipit. Eligendi cumque voluptate, quibusdam libero? Eveniet asperiores illum sapiente placeat alias. Vel nulla, autem ea dolore nesciunt recusandae eligendi perferendis consectetur explicabo fugiat voluptatum inventore nihil esse, incidunt dicta, perspiciatis ipsum molestias quaerat quidem accusamus aliquam asperiores debitis omnis, dolorem. Pariatur, sint, modi omnis cum eos tempora exercitationem quisquam praesentium id. Delectus veritatis magnam sint soluta praesentium, cumque odio architecto natus modi animi porro minus saepe maiores doloribus, dolor amet possimus dolorum voluptatum expedita adipisci harum quam tempore fugit autem. Ullam qui enim itaque eveniet consequatur nesciunt officia aspernatur, numquam culpa reprehenderit quos nostrum adipisci id. Fugiat, pariatur doloremque eius vero officia, mollitia iste explicabo consequatur quasi iusto corporis facilis exercitationem nemo itaque asperiores, quibusdam, optio necessitatibus aliquid. Hic incidunt vero nesciunt inventore quam ullam rerum, tenetur atque ratione voluptatem aut omnis distinctio magnam eligendi consequuntur cupiditate impedit error fuga quisquam in eos aperiam molestiae quaerat expedita. Rem minima sint ipsa cumque. Iste eveniet voluptatem reprehenderit, rem iusto. Laborum perferendis cum iste molestiae minus enim architecto esse sed amet, sit in nemo tenetur voluptatibus vel temporibus ratione voluptatem, tempora est exercitationem incidunt! Fuga id eaque illo, magnam sequi voluptatibus nemo, ad facere. Eos quaerat natus, suscipit neque ut libero debitis sit quidem. Incidunt eum quidem ratione necessitatibus aut consectetur ut laudantium dolor, nihil doloremque eos accusantium tempore. Ipsa tempore fugiat veritatis quae, consequuntur iure ullam iusto recusandae reiciendis voluptatibus natus voluptate explicabo neque blanditiis aliquid, nulla.</p>
+                    </div>
+                </div>
             </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
-          </div>
 
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
-          </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              Versions
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
-            </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">App developer resources</li>
-              <li class="mdl-menu__item">Android Open Source Project</li>
-              <li class="mdl-menu__item">Android SDK</li>
-              <li class="mdl-menu__item">Android for Work</li>
-            </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-          </div>
-
-        </footer>
-      </div>
-    </div>
-    <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
-    <script src="https://code.getmdl.io/1.1.2/material.min.js"></script>
-  </body>
+         
+        
+            
+        </div>
+        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="javascripts/min.js"></script>
+        <script src="javascripts/toolkit.js"></script>
+    </body>
 </html>
